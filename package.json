@@ -1,0 +1,49 @@
+{
+  "name": "gameportfoliosite",
+  "description": "A web development portfolio site using a 2d side scroller",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack serve --open",
+    "commit": "cz",
+    "release": "standard-version",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esaldivar/GamePortfolioSite.git"
+  },
+  "keywords": [
+    "game",
+    "javascript",
+    "2d",
+    "game-engine",
+    "sidescroller"
+  ],
+  "author": "Eric Saldivar",
+  "license": "MIT",
+  "devDependencies": {
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "^8.16.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "husky": "^8.0.2",
+    "release": "^6.3.1",
+    "standard-version": "^9.5.0",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "bugs": {
+    "url": "https://github.com/esaldivar/GamePortfolioSite/issues"
+  },
+  "homepage": "https://github.com/esaldivar/GamePortfolioSite#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "webpack-dev-server": "^4.11.1"
+  }
+}
