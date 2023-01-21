@@ -20,7 +20,7 @@ export class Player {
     
 
     draw(){
-        this.character.fillStyle = 'red';
+        this.character.fillStyle = 'blue';
         this.character.fillRect(this.position.x, this.position.y, this.width, this.height);
     }
 

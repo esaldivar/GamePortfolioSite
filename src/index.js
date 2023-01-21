@@ -1,6 +1,7 @@
 import { Player } from './Entities/Player/Player.js';
 import { Sprite } from './Entities/Sprite/Sprite.js';
 import backgroundLevelOneImg from '../Img/backgroundLevel1.png';
+import { collisionBlocks } from './data/collisions.js';
 
 const canvas = document.querySelector('canvas');
 const c = canvas.getContext('2d');
@@ -41,6 +42,7 @@ function animate() {
     c.fillRect(0, 0, canvas.width, canvas.height);
 
     backgroundLevel1.draw();
+    collisionBlocks.forEach(block => block.draw());
 
     player.velocity.x = 0;
     if(keys.KeyA.pressed){
